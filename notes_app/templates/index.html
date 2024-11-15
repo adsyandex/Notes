@@ -1,0 +1,11 @@
+<!-- templates/index.html -->
+{{define "content"}}
+<h2>Your Notes</h2>
+<a href="/create">Create a new note</a>
+<ul>
+    {{range .}}
+        <li><a href="/note?id={{.ID}}">{{.Title}}</a></li>
+    {{end}}
+</ul>
+{{end}}
+
