@@ -132,7 +132,7 @@ func CheckPasswordHash(password, hash string) bool {
     return err == nil
 }
 ```
-### Шаг 5: Основной файлmain.go
+### Шаг 5: Основной файл main.go
 Настраиваем main.goподключение к базе данных и запускаем сервер.
 ```
 // main.go
